@@ -110,7 +110,7 @@ const Home = () => {
             <li>
               <strong className='text-2xl'>I learn quickly.</strong>
               <p>
-                lthough I majored in acting in university, I later taught myself programming and worked as a front-end developer for 4 years. This shows my ability to learn new things quickly and adapt to different fields.
+                although I majored in acting in university, I later taught myself programming and worked as a front-end developer for 4 years. This shows my ability to learn new things quickly and adapt to different fields.
               </p>
             </li>
             <li>
