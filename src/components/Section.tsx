@@ -67,7 +67,7 @@ const Section = ({ className, children, range, title, part, details, imgs }: Sec
                       fill
                       priority={true}
                       alt={title || 'part_time_img'}
-                      className="object-contain transition-transform duration-500 group-hover:scale-105 group-active:scale-105"
+                      className="object-contain transition-transform duration-500 group-hover:scale-[1.3] group-active:scale-[1.3]"
                     />
                   </div>
                 ))}
