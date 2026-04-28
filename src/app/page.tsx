@@ -4,6 +4,20 @@ import Script from 'next/script'
 const Home = () => {
   const COVER_LETTER = [
     {
+      title: 'Maple Media',
+      part: 'Customer Service Cashier',
+      range: '2025-08 ~ 2026-04',
+      details: [
+        'I am confident in my ability to create a positive and engaging experience for customers.',
+        'As a Game Presenter, I interacted with players in real time and helped create a fun and comfortable atmosphere.',
+        'I also maintained accuracy and stayed professional while working in a fast-paced environment.'
+      ],
+      imgs: [
+        '/assets/arrise1.jpg',
+        '/assets/arrise2.jpg',
+      ],
+    },
+    {
       title: 'Olive Young',
       part: 'Customer Service Cashier',
       range: '2019-04 ~ 2020-08',
