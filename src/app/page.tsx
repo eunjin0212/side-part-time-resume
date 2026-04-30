@@ -67,6 +67,29 @@ const Home = () => {
     },
   ]
 
+  const STRENGTHS = [
+    {
+      title: 'I stay committed.',
+      details: [
+        'I’ve never worked at a place for less than a year.',
+        'I worked at McDonald’s as a cashier for 5 years during high school, at nightclubs in Gangnam as a server for 2 years, and at Olive Young (a Korean beauty store) as a cashier for 1.5 years. I tend to stay long-term and take my responsibilities seriously.'
+      ]
+    },
+    {
+      title: 'I learn quickly.',
+      details: [
+        'although I majored in acting in university, I later taught myself programming and worked as a front-end developer for 4 years. This shows my ability to learn new things quickly and adapt to different fields.'
+      ]
+    },
+    {
+      title: 'I have 8 years of customer service experience.',
+      details: [
+        'While my experience is from Korea, I believe the core of great service—smiles and kindness—is universal.',
+        'At Olive Young, I was once selected as a “Smile Mate” for outstanding customer service, which reflects my dedication to creating a positive experience for every customer.',
+      ]
+    }
+  ]
+
   const contactClass = 'inline-block h-9 w-9 hover:animate-bounce focus:animate-bounce'
   return (
     <>
@@ -102,7 +125,7 @@ const Home = () => {
           </>
         </Section>
         <Section>
-          <p>Energetic and reliable service professional with 7+ years of experience in fast-paced customer-facing
+          <p>Energetic and reliable service professional with 8+ years of experience in fast-paced customer-facing
             roles.</p>
           <p>Known for staying calm under pressure, providing attentive service, and maintaining a positive
             attitude.</p>
@@ -114,26 +137,13 @@ const Home = () => {
         <Section>
           <h3 className='text-7xl max-md:text-5xl max-sm:text-4xl'>Why I am a good fit for your team?</h3>
           <ol className='list-decimal mt-10 px-10'>
-            <li>
-              <strong className='text-2xl'>I stay committed.</strong>
-              <p>
-                I’ve never worked at a place for less than a year.
-                I worked at McDonald’s as a cashier for 5 years during high school, at nightclubs in Gangnam as a server for 2 years, and at Olive Young (a Korean beauty store) as a cashier for 1.5 years. I tend to stay long-term and take my responsibilities seriously.
-              </p>
-            </li>
-            <li>
-              <strong className='text-2xl'>I learn quickly.</strong>
-              <p>
-                although I majored in acting in university, I later taught myself programming and worked as a front-end developer for 4 years. This shows my ability to learn new things quickly and adapt to different fields.
-              </p>
-            </li>
-            <li>
-              <strong className='text-2xl'>I have 7 years of customer service experience.</strong>
-              <p>
-                While my experience is from Korea, I believe the core of great service—smiles and kindness—is universal.
-                At Olive Young, I was once selected as a “Smile Mate” for outstanding customer service, which reflects my dedication to creating a positive experience for every customer.
-              </p>
-            </li>
+            {STRENGTHS.map((item) => <li key={item.title}>
+              <strong className='text-2xl'>{item.title}</strong>{
+                item.details.map(
+                  (detail, index) =>
+                    <p key={index}>{detail}</p>
+                )}
+            </li>)}
           </ol>
         </Section>
         <Section className="py-20 text-center text-8xl max-md:text-5xl max-sm:text-4xl">
